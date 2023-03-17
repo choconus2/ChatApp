@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:3:4-33:19
-MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
-MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:3:4-33:19
+MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/hieund/.gradle/caches/transforms-2/files-2.1/c32a9b1e85e599c15518cbaf231e378f/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/hieund/.gradle/caches/transforms-2/files-2.1/c32a9b1e85e599c15518cbaf231e378f/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:30:5-59:19
@@ -25,10 +25,10 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/cac
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/957ccb776cae37c3c6b160450df048a5/jetified-firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:15:5-23:19
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/1c97b6c0307d45aef762047c3c6d49f4/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/1c97b6c0307d45aef762047c3c6d49f4/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b0fd3a22f8c5cd9b6a8ce9a5f722d546/jetified-firebase-common-20.2.0/AndroidManifest.xml:24:5-37:19
@@ -56,20 +56,21 @@ MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /Users/hieund/.gradl
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/77cbacb735b87f31170864e9a12cd861/core-1.6.0/AndroidManifest.xml:24:18-86
 	android:name
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-46:12
-MERGED from [:sqflite] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:path_provider_android] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-46:12
+MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:flutter_secure_storage] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_secure_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:sqflite] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:path_provider_android] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/d6a3e1945f69875025694d02c774a1a3/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/hieund/.gradle/caches/transforms-2/files-2.1/441c8658362325dcbbfab0f282d66d70/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/hieund/.gradle/caches/transforms-2/files-2.1/c32a9b1e85e599c15518cbaf231e378f/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
@@ -80,13 +81,14 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/hi
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/6a39418260f6c8a795150af31d9724dc/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/957ccb776cae37c3c6b160450df048a5/jetified-firebase-auth-21.1.0/AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:2:1-25:12
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/1c97b6c0307d45aef762047c3c6d49f4/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b0fd3a22f8c5cd9b6a8ce9a5f722d546/jetified-firebase-common-20.2.0/AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/hieund/.gradle/caches/transforms-2/files-2.1/d45e620bf0716a5455158e1e10ad496a/jetified-play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/c2379df0db29d95f788bfcfa9ede8262/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/20a1bb0fd809433d40e9af2024a9368e/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha03] /Users/hieund/.gradle/caches/transforms-2/files-2.1/988797dcbb6cb97db189e8de3e0f02b6/jetified-security-crypto-1.1.0-alpha03/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/2b96e0a8f577e0b6278e41b87834b436/media-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/25a1b4d6cd735ffd26c216c62a73c56b/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/82f520f64c85d078b69527d2a9381356/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
@@ -110,8 +112,8 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/hieund/.gradle/caches/
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/aea35442d8a2aa038b5f813af0767d23/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/823a5f41254f277aa6f0f073d34ab3d0/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/8ae011fae31043caab7d474965e55bca/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ad108f90e085442034d96659b8348d59/jetified-firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/4d480ed415180c6619c8e6e9a59f3fdc/jetified-transport-api-3.0.0/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ad108f90e085442034d96659b8348d59/jetified-firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/63041a5ee1e5e0f98c9c72d715f3f58d/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ae7c85d25cca4bd80cf79173a0fc99bf/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/9a88afe1c8a9780c7eab827d099184a9/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -122,41 +124,43 @@ MERGED from [io.grpc:grpc-android:1.50.2] /Users/hieund/.gradle/caches/transform
 MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /Users/hieund/.gradle/caches/transforms-2/files-2.1/00db650667aa18fec4bccc6688b1da9a/jetified-threetenabp-1.2.3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a0a0ad63673d46b06108489ff7df9a10/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/fa3ea6cc8db757a34beb927e7144cfac/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:2:5-36
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:2:5-36
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-sdk
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml
-MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_secure_storage] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_secure_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-11:53
+MERGED from [:flutter_secure_storage] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_secure_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-11:53
+MERGED from [:sqflite] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/d6a3e1945f69875025694d02c774a1a3/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/d6a3e1945f69875025694d02c774a1a3/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/hieund/.gradle/caches/transforms-2/files-2.1/441c8658362325dcbbfab0f282d66d70/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
@@ -177,10 +181,10 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/cac
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/957ccb776cae37c3c6b160450df048a5/jetified-firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ec09f4ba7a1ad11b1155f1e8219d099a/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/1c97b6c0307d45aef762047c3c6d49f4/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/1c97b6c0307d45aef762047c3c6d49f4/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b0fd3a22f8c5cd9b6a8ce9a5f722d546/jetified-firebase-common-20.2.0/AndroidManifest.xml:19:5-21:41
@@ -191,6 +195,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hieund/.gra
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/c2379df0db29d95f788bfcfa9ede8262/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/20a1bb0fd809433d40e9af2024a9368e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/20a1bb0fd809433d40e9af2024a9368e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha03] /Users/hieund/.gradle/caches/transforms-2/files-2.1/988797dcbb6cb97db189e8de3e0f02b6/jetified-security-crypto-1.1.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.1.0-alpha03] /Users/hieund/.gradle/caches/transforms-2/files-2.1/988797dcbb6cb97db189e8de3e0f02b6/jetified-security-crypto-1.1.0-alpha03/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/2b96e0a8f577e0b6278e41b87834b436/media-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/2b96e0a8f577e0b6278e41b87834b436/media-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/25a1b4d6cd735ffd26c216c62a73c56b/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
@@ -237,10 +243,10 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hieund/.gr
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/823a5f41254f277aa6f0f073d34ab3d0/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/8ae011fae31043caab7d474965e55bca/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/8ae011fae31043caab7d474965e55bca/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ad108f90e085442034d96659b8348d59/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ad108f90e085442034d96659b8348d59/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/4d480ed415180c6619c8e6e9a59f3fdc/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/4d480ed415180c6619c8e6e9a59f3fdc/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ad108f90e085442034d96659b8348d59/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ad108f90e085442034d96659b8348d59/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/63041a5ee1e5e0f98c9c72d715f3f58d/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/63041a5ee1e5e0f98c9c72d715f3f58d/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/ae7c85d25cca4bd80cf79173a0fc99bf/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
@@ -261,18 +267,20 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/hieun
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a0a0ad63673d46b06108489ff7df9a10/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/fa3ea6cc8db757a34beb927e7144cfac/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/fa3ea6cc8db757a34beb927e7144cfac/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:flutter_secure_storage] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_secure_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-50
 	android:targetSdkVersion
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml:6:5-66
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+ADDED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/7998cf7f9af1cf054586a6155f5b0d14/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/7998cf7f9af1cf054586a6155f5b0d14/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/957ccb776cae37c3c6b160450df048a5/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
@@ -284,15 +292,77 @@ MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.g
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from /Users/hieund/Desktop/HieuND/Flutter/chats_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/hieund/Desktop/HieuND/Flutter/ChatApp/android/app/src/debug/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/7998cf7f9af1cf054586a6155f5b0d14/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/7998cf7f9af1cf054586a6155f5b0d14/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/397d8e071b46f7bfc41961d66c76f017/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/397d8e071b46f7bfc41961d66c76f017/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/957ccb776cae37c3c6b160450df048a5/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/957ccb776cae37c3c6b160450df048a5/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:7:5-79
+MERGED from [io.grpc:grpc-android:1.50.2] /Users/hieund/.gradle/caches/transforms-2/files-2.1/e67bf14dd2a42e7ae091e80fdfe1ebd8/jetified-grpc-android-1.50.2/AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.50.2] /Users/hieund/.gradle/caches/transforms-2/files-2.1/e67bf14dd2a42e7ae091e80fdfe1ebd8/jetified-grpc-android-1.50.2/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+	android:exported
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+	android:permission
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+	android:name
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+	android:exported
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+	android:name
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+	android:exported
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+	android:name
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+	android:name
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
-MERGED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
-MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:52:9-58:19
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:52:9-58:19
 MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/hieund/.gradle/caches/transforms-2/files-2.1/302439564126a70732f6dba58a6b19e7/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
@@ -312,141 +382,79 @@ MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/hieund/.gradle/c
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.2.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b0fd3a22f8c5cd9b6a8ce9a5f722d546/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
 	android:name
-		ADDED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
-meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-	android:value
-		ADDED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-	android:name
-		ADDED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:9:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:9:5-68
-	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-65
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/b00d649d5b0de3ee695b4a954426c1a9/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/7998cf7f9af1cf054586a6155f5b0d14/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/7998cf7f9af1cf054586a6155f5b0d14/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/397d8e071b46f7bfc41961d66c76f017/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/hieund/.gradle/caches/transforms-2/files-2.1/397d8e071b46f7bfc41961d66c76f017/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/957ccb776cae37c3c6b160450df048a5/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/957ccb776cae37c3c6b160450df048a5/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.4.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/a4ff05b198fef9348d065272fce6e33b/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.0] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3182bf93b2893be90a773d27bc938945/jetified-firebase-installations-17.1.0/AndroidManifest.xml:9:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/hieund/.gradle/caches/transforms-2/files-2.1/3505cb39d12a3016fd0333d691e3c9d8/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:7:5-79
-MERGED from [io.grpc:grpc-android:1.50.2] /Users/hieund/.gradle/caches/transforms-2/files-2.1/e67bf14dd2a42e7ae091e80fdfe1ebd8/jetified-grpc-android-1.50.2/AndroidManifest.xml:9:5-79
-MERGED from [io.grpc:grpc-android:1.50.2] /Users/hieund/.gradle/caches/transforms-2/files-2.1/e67bf14dd2a42e7ae091e80fdfe1ebd8/jetified-grpc-android-1.50.2/AndroidManifest.xml:9:5-79
-	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
-service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
-	android:exported
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
-	android:permission
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
-	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
-service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
-	android:exported
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
-	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
-	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
-receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
-	android:exported
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
-	android:permission
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
-	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
-intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
-	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
 	android:value
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
 	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
 provider#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
-ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
 	android:authorities
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
 	android:exported
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
 	android:initOrder
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
 	android:name
-		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+		ADDED from [:firebase_messaging] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
+ADDED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_auth] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.VIBRATE
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
 uses-permission#android.permission.USE_FULL_SCREEN_INTENT
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
 receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-106
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-106
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:19-103
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:19-103
 receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-20:20
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-20:20
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-107
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-107
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-19:29
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-19:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-79
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-79
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:25-76
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:25-76
 action#android.intent.action.MY_PACKAGE_REPLACED
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-84
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-84
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:25-81
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:25-81
 action#android.intent.action.QUICKBOOT_POWERON
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-82
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-82
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:25-79
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:25-79
 action#com.htc.intent.action.QUICKBOOT_POWERON
-ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-82
+ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-82
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-79
+		ADDED from [:flutter_local_notifications] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-79
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/chats_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] /Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] /Users/hieund/.gradle/caches/transforms-2/files-2.1/c32a9b1e85e599c15518cbaf231e378f/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required

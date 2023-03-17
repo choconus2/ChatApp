@@ -245,10 +245,8 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          FirebaseAuth.instance.currentUser!.getIdToken().then((value) {
-            print(value);
-          },);
-          FirebaseMessaging.instance.getToken().then((value) => print(value));
+          AuthCredential credential = EmailAuthProvider.credential(email: "absk@gmail.com", password: "123456");
+          FirebaseAuth.instance.signInWithCredential(credential).then((value) => print(value)).onError((error, stackTrace) => print(error));
         },
       ),
     );

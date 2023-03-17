@@ -268,6 +268,8 @@ com/google/common/util/concurrent/ParametricNullness.class
 com/google/common/util/concurrent/Partially$GwtIncompatible.class
 com/google/common/xml/ElementTypesAreNonnullByDefault.class
 com/google/common/xml/ParametricNullness.class
+com/google/crypto/tink/annotations/Alpha.class
+com/google/crypto/tink/shaded/protobuf/ExperimentalApi.class
 com/google/errorprone/annotations/CanIgnoreReturnValue.class
 com/google/errorprone/annotations/CheckReturnValue.class
 com/google/errorprone/annotations/CompatibleWith.class

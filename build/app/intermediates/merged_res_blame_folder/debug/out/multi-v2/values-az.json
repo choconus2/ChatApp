@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/hieund/Desktop/HieuND/Flutter/chats_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
+            "outputFile": "/Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
             "map": [
                 {
                     "source": "/Users/hieund/.gradle/caches/transforms-2/files-2.1/2ad1824fde2015172bd302704ebe5c04/jetified-play-services-base-18.0.1/res/values-az/values.xml",

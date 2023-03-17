@@ -78,6 +78,7 @@
 //   }
 // }
 import 'package:chats_app/ui/login/login.dart';
+import 'package:chats_app/ui/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
@@ -179,7 +180,7 @@ class _AppState extends State<App> {
     return BlocBuilder<AppBloc, BaseState>(
       bloc: AppBloc.instance,
       builder: (BuildContext context, state) {
-        return LoginScreen();
+        return SplashScreen();
       },
     );
   }

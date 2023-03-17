@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/hieund/Desktop/HieuND/Flutter/chats_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "/Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/Users/hieund/.gradle/caches/transforms-2/files-2.1/6eb1772d360a86c4fb4f26e2f31e0aa4/browser-1.4.0/res/values-en-rAU/values-en-rAU.xml",

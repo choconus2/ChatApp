@@ -94,7 +94,7 @@ class Menu extends StatelessWidget {
                             builder: (context) => LoginScreen(),
                           ),
                         );
-                      },
+                        },
                     );
               },
               child: Row(

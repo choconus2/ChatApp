@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/hieund/Desktop/HieuND/Flutter/chats_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/hieund/.gradle/caches/transforms-2/files-2.1/2b96e0a8f577e0b6278e41b87834b436/media-1.1.0/res/values-v21/values-v21.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/hieund/Desktop/HieuND/Flutter/chats_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "/Users/hieund/Desktop/HieuND/Flutter/ChatApp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "/Users/hieund/.gradle/caches/transforms-2/files-2.1/8eead0a9c05e2445803da9d01753abb4/jetified-play-services-basement-18.1.0/res/values-zh-rHK/values.xml",

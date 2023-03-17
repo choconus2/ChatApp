@@ -31,24 +31,31 @@ class LoginBloc extends BaseBloc {
     }
     if (errorEmail == null && errorPassword == null) {}
     try {
-      UserCredential userCredential =
-          await FirebaseAuth.instance.signInWithEmailAndPassword(
+      await FirebaseAuth.instance
+          .signInWithEmailAndPassword(
         email: email.text.trim(),
         password: password.text.trim(),
-      );
-      AppBloc.instance.userCurrent = Users(
-        uid: userCredential.user!.uid,
-        name: "",
-        email: userCredential.user!.email ?? "",
-        image: userCredential.user!.photoURL ?? "",
-        rooms: [],
-      );
-      FirebaseMessaging.instance.getToken().then((value) {
-        FirebaseFirestore.instance.collection("User").doc(userCredential.user!.uid).update({
-          "tokenNotification":value,
+      )
+          .then((value) {
+        AuthCredential credential = EmailAuthProvider.credential(
+            email: value.user!.email ?? "", password: password.text);
+        secureStorageHelper.save("credential", credential);
+        AppBloc.instance.userCurrent = Users(
+          uid: value.user!.uid,
+          name: "",
+          email: value.user!.email ?? "",
+          image: value.user!.photoURL ?? "",
+          rooms: [],
+        );
+        FirebaseMessaging.instance.getToken().then((values) {
+          FirebaseFirestore.instance
+              .collection("User")
+              .doc(value.user!.uid)
+              .update({
+            "tokenNotification": values,
+          });
         });
       });
-
       call(() => LoginState.loginSuccess);
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
