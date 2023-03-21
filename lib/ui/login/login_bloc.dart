@@ -37,9 +37,6 @@ class LoginBloc extends BaseBloc {
         password: password.text.trim(),
       )
           .then((value) {
-        AuthCredential credential = EmailAuthProvider.credential(
-            email: value.user!.email ?? "", password: password.text);
-        secureStorageHelper.save("credential", credential);
         AppBloc.instance.userCurrent = Users(
           uid: value.user!.uid,
           name: "",

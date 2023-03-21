@@ -104,6 +104,8 @@ Future<void> _firebaseMessaging(RemoteMessage message) async {
   print("ssasd ${message.messageId}");
 }
 
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -117,8 +119,9 @@ Future<void> main() async {
     badge: true,
     sound: true,
   );
-  return runApp(const MaterialApp(
-    home: App(),
+  return runApp( MaterialApp(
+    home: const App(),
+    navigatorKey: navigatorKey,
   ));
 }
 
