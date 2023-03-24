@@ -22,6 +22,7 @@ class MessengerBloc extends BaseBloc {
   late Stream<QuerySnapshot> messageStream;
   final ScrollController controllerScroll = ScrollController();
   var token;
+  String image="";
 
   Future<void> sendPushMessage() async {
     if(token==null){
@@ -68,6 +69,7 @@ class MessengerBloc extends BaseBloc {
   getUser() async {
     await fs.collection("User").doc(AppBloc.instance.uidSearch).get().then((value) {
       token=value.data()!["tokenNotification"];
+      image=value.data()!["avatar"];
     });
   }
 

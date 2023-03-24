@@ -179,7 +179,10 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                                   width: 50,
                                   height: 50,
                                   fit: BoxFit.fill,
-                                  imageUrl: LinkUrlImage.urlImageUserDefault,
+                                  imageUrl: p[index].image == ""
+                                      ? LinkUrlImage.urlImageUserDefault
+                                      : LinkUrlImage.urlImage(
+                                      p[index].image),
                                 ),
                                 const SizedBox(
                                   width: 10,

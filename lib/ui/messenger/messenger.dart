@@ -238,7 +238,10 @@ class MessengerScreen extends BaseStatefulWidget<MessengerBloc> {
                             width: 30,
                             height: 30,
                             fit: BoxFit.fill,
-                            imageUrl: LinkUrlImage.urlImageUserDefault,
+                            imageUrl: bloc.image == ""
+                                ? LinkUrlImage.urlImageUserDefault
+                                : LinkUrlImage.urlImage(
+                                bloc.image),
                           ),
                 const SizedBox(
                   width: 2,

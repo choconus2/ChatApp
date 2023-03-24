@@ -4,10 +4,12 @@ import 'package:chats_app/ui/login/login.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../link_url_image.dart';
+import '../dialog/dialog_edit_avatar.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -54,7 +56,10 @@ class Menu extends StatelessWidget {
                   width: 60,
                   height: 60,
                   fit: BoxFit.fill,
-                  imageUrl: LinkUrlImage.urlImageUserDefault,
+                  imageUrl: AppBloc.instance.userCurrent!.image == ""
+                      ? LinkUrlImage.urlImageUserDefault
+                      : LinkUrlImage.urlImage(
+                      AppBloc.instance.userCurrent!.image),
                 ),
                 const SizedBox(
                   width: 10,
@@ -70,7 +75,10 @@ class Menu extends StatelessWidget {
                   width: 10,
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    dialogEditAvatar(context);
+                    // FirebaseStorage.instance.ref().child(path)
+                  },
                   icon: const Icon(
                     Icons.edit,
                     color: Colors.blue,
