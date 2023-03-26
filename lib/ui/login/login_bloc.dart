@@ -8,7 +8,13 @@ import 'package:flutter/cupertino.dart';
 import '../../helper/secure_storage_helper.dart';
 import '../../model/user.dart';
 
-enum LoginState { loginSuccess, loginError }
+enum LoginState {
+  loginSuccess,
+  loginError,
+  loading,
+  loginWrongPassword,
+  loginEmailNotFound
+}
 
 class LoginBloc extends BaseBloc {
   TextEditingController email = TextEditingController();
@@ -29,36 +35,41 @@ class LoginBloc extends BaseBloc {
     } else {
       errorPassword = null;
     }
-    if (errorEmail == null && errorPassword == null) {}
-    try {
-      await FirebaseAuth.instance
-          .signInWithEmailAndPassword(
-        email: email.text.trim(),
-        password: password.text.trim(),
-      )
-          .then((value) {
-        AppBloc.instance.userCurrent = Users(
-          uid: value.user!.uid,
-          name: "",
-          email: value.user!.email ?? "",
-          image: value.user!.photoURL ?? "",
-          rooms: [],
-        );
-        FirebaseMessaging.instance.getToken().then((values) {
-          FirebaseFirestore.instance
-              .collection("User")
-              .doc(value.user!.uid)
-              .update({
-            "tokenNotification": values,
+    if (errorEmail == null && errorPassword == null) {
+      call(() => LoginState.loading);
+      try {
+        await FirebaseAuth.instance
+            .signInWithEmailAndPassword(
+          email: email.text.trim(),
+          password: password.text.trim(),
+        )
+            .then((value) {
+          AppBloc.instance.userCurrent = Users(
+            uid: value.user!.uid,
+            name: "",
+            email: value.user!.email ?? "",
+            image: value.user!.photoURL ?? "",
+            rooms: [],
+          );
+          FirebaseMessaging.instance.getToken().then((values) {
+            FirebaseFirestore.instance
+                .collection("User")
+                .doc(value.user!.uid)
+                .update({
+              "tokenNotification": values,
+            });
           });
         });
-      });
-      call(() => LoginState.loginSuccess);
-    } on FirebaseAuthException catch (e) {
-      if (e.code == 'user-not-found') {
-        print('No user found for that email.');
-      } else if (e.code == 'wrong-password') {
-        print('Wrong password provided for that user.');
+        print("sadasda");
+        call(() => LoginState.loginSuccess);
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'user-not-found') {
+          call(() => LoginState.loginEmailNotFound);
+        } else if (e.code == 'wrong-password') {
+          call(() => LoginState.loginWrongPassword);
+        } else {
+          call(() => LoginState.loginError);
+        }
       }
     }
   }

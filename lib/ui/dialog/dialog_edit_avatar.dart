@@ -88,7 +88,10 @@ Future<void> dialogEditAvatar(BuildContext context) async {
                         await _picker.pickImage(source: ImageSource.gallery);
                     setState(
                       () {
-                        file = File(image!.path);
+                        if(image!=null){
+                          file = File(image!.path);
+                        }
+
                       },
                     );
                   },

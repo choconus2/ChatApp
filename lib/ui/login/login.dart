@@ -1,5 +1,6 @@
 import 'package:chats_app/base_bloc/base_bloc.dart';
 import 'package:chats_app/base_statefulWidget/base_statefulWidget.dart';
+import 'package:chats_app/ui/dialog/dialog_loading.dart';
 import 'package:chats_app/ui/home/home.dart';
 import 'package:chats_app/ui/login/login_bloc.dart';
 import 'package:chats_app/ui/register/register.dart';
@@ -9,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../../widget_common/text_field.dart';
+import '../dialog/dialog_error.dart';
 
 class LoginScreen extends BaseStatefulWidget<LoginBloc> {
   LoginScreen({Key? key}) : super(key: key);
@@ -115,6 +117,25 @@ class LoginScreen extends BaseStatefulWidget<LoginBloc> {
           builder: (BuildContext context) => HomeScreen(),
         ),
       );
+      return;
+    }
+    if (baseState.sign == LoginState.loading) {
+      showDialogLoadingCommon(context);
+      return;
+    }
+    if (baseState.sign == LoginState.loginWrongPassword) {
+      Navigator.pop(context);
+      showDialogErrorCommon(context,errorText: "Wrong password provided for that user.");
+      return;
+    }
+    if (baseState.sign == LoginState.loginEmailNotFound) {
+    Navigator.pop(context);
+    showDialogErrorCommon(context,errorText: "No user found for that email.");
+    return;
+    }
+    if (baseState.sign == LoginState.loginError) {
+      Navigator.pop(context);
+      showDialogErrorCommon(context);
       return;
     }
   }
