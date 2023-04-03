@@ -21,7 +21,7 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer:const Menu(),
+      drawer: const Menu(),
       appBar: AppBar(
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: Colors.white, // <-- SEE HERE
@@ -181,8 +181,7 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                                   fit: BoxFit.fill,
                                   imageUrl: p[index].image == ""
                                       ? LinkUrlImage.urlImageUserDefault
-                                      : LinkUrlImage.urlImage(
-                                      p[index].image),
+                                      : LinkUrlImage.urlImage(p[index].image),
                                 ),
                                 const SizedBox(
                                   width: 10,
@@ -245,12 +244,6 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          AuthCredential credential = EmailAuthProvider.credential(email: "absk@gmail.com", password: "123456");
-          FirebaseAuth.instance.signInWithCredential(credential).then((value) => print(value)).onError((error, stackTrace) => print(error));
-        },
       ),
     );
   }

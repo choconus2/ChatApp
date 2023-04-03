@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:chats_app/ui/dialog/dialog_success.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -10,6 +11,7 @@ import 'package:image_picker/image_picker.dart';
 
 import '../../base_bloc/app_bloc.dart';
 import '../../link_url_image.dart';
+import 'dialog_loading.dart';
 
 Future<void> dialogEditAvatar(BuildContext context) async {
   final ImagePicker _picker = ImagePicker();
@@ -107,22 +109,30 @@ Future<void> dialogEditAvatar(BuildContext context) async {
               textStyle: Theme.of(context).textTheme.labelLarge,
             ),
             child: const Text('Save'),
-            onPressed: () {
+            onPressed: () async {
               if (image != null) {
                 final path = "files/${image!.name}";
                 var res = FirebaseStorage.instance.ref().child(path);
-                res.putFile(file!).then((p0) async {
-                  await FirebaseAuth.instance.currentUser!
-                      .updatePhotoURL(p0.ref.name);
-                  await FirebaseFirestore.instance
-                      .collection("User")
-                      .doc(AppBloc.instance.userCurrent!.uid)
-                      .update({
-                    "avatar": p0.ref.name.toString(),
-                  }).then((value) {
-                    AppBloc.instance.userCurrent!.image = p0.ref.name;
-                  });
-                });
+               try{
+                 showDialogLoadingCommon(context);
+                 await res.putFile(file!).then((p0) async {
+                   await FirebaseAuth.instance.currentUser!
+                       .updatePhotoURL(p0.ref.name);
+                   await FirebaseFirestore.instance
+                       .collection("User")
+                       .doc(AppBloc.instance.userCurrent!.uid)
+                       .update({
+                     "avatar": p0.ref.name.toString(),
+                   }).then((value) {
+                     AppBloc.instance.userCurrent!.image = p0.ref.name;
+                   });
+                   Navigator.pop(context);
+                   showDialogSuccessCommon(context,successText: "Change avatar successfully");
+                 });
+               }catch(e){
+                 Navigator.pop(context);
+                 showDialogSuccessCommon(context,successText: "Change avatar error");
+               }
               }
             },
           ),

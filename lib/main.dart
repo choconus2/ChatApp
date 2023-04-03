@@ -99,17 +99,11 @@ const AndroidNotificationChannel channel = AndroidNotificationChannel(
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 
-Future<void> _firebaseMessaging(RemoteMessage message) async {
-  await Firebase.initializeApp();
-  print("ssasd ${message.messageId}");
-}
-
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  FirebaseMessaging.onBackgroundMessage(_firebaseMessaging);
   await flutterLocalNotificationsPlugin
       .resolvePlatformSpecificImplementation<
           AndroidFlutterLocalNotificationsPlugin>()
@@ -132,13 +126,27 @@ class App extends StatefulWidget {
   State<App> createState() => _AppState();
 }
 
-class _AppState extends State<App> {
+class _AppState extends State<App> with WidgetsBindingObserver{
+  bool stateApp=false;
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    if(state==AppLifecycleState.paused){
+      stateApp=false;
+    }else if(state==AppLifecycleState.resumed){
+      stateApp=true;
+    }
+  }
+
   @override
   void initState() {
-    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+    WidgetsBinding.instance?.addObserver(this);
+    stateApp=true;
+    FirebaseMessaging.onMessage.listen((RemoteMessage message) async {
       RemoteNotification? notification = message.notification;
       AndroidNotification? android = message.notification?.android;
-      if (notification != null && android != null) {
+      if (notification != null && android != null && stateApp==false) {
         flutterLocalNotificationsPlugin.show(
           notification.hashCode,
           notification.title,

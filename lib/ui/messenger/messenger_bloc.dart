@@ -142,6 +142,7 @@ class MessengerBloc extends BaseBloc {
   }
 
   createMessage() async {
+    content.text="";
     if (alikeUid != true) {
       await createRoom();
     }
@@ -151,7 +152,6 @@ class MessengerBloc extends BaseBloc {
       "avatar":AppBloc.instance.userCurrent!.image,
       "timeAt": DateTime.now(),
     });
-
     fs.collection("Room").doc(idRoom).update({
       "messengerPresent": content.text,
       "timeCreateMessengerPresent": DateTime.now(),

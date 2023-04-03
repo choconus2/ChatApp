@@ -11,6 +11,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../../link_url_image.dart';
+import '../dialog/dialog_loading.dart';
 
 class MessengerScreen extends BaseStatefulWidget<MessengerBloc> {
   MessengerScreen({Key? key}) : super(key: key);
@@ -302,10 +303,12 @@ class MessengerScreen extends BaseStatefulWidget<MessengerBloc> {
   @override
   void onStateChange(BuildContext context, BaseState baseState) {
     if (baseState.sign == MessengerState.loading) {
+      showDialogLoadingCommon(context);
       return;
     }
 
     if (baseState.sign == MessengerState.success) {
+      Navigator.pop(context);
       return;
     }
   }
