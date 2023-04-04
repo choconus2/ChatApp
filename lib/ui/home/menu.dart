@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:chats_app/base_bloc/app_bloc.dart';
+import 'package:chats_app/base_bloc/base_bloc.dart';
 import 'package:chats_app/ui/login/login.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -7,11 +8,14 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../base_statefulWidget/base_statefulWidget.dart';
 import '../../link_url_image.dart';
+import '../../model/user.dart';
 import '../dialog/dialog_edit_avatar.dart';
+import 'home_bloc.dart';
 
-class Menu extends StatelessWidget {
-  const Menu({Key? key}) : super(key: key);
+class Menu extends BaseStatefulWidget<HomeBloc> {
+  Menu({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -122,5 +126,13 @@ class Menu extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  HomeBloc create() => HomeBloc();
+
+  @override
+  void onStateChange(BuildContext context, BaseState baseState) {
+    // TODO: implement onStateChange
   }
 }

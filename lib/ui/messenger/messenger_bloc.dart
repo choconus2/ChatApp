@@ -48,7 +48,7 @@ class MessengerBloc extends BaseBloc {
             'title': AppBloc.instance.userCurrent?.email,
             'body': content.text,
           },
-          'to':"e0yRLCoqQa-i8z8PUAndYM:APA91bEsf7NUHSrA9sKi3FBOf5TJbkR-f34YS2FGYx6N56-GLh2IkqSxGOdVxw48b27GzLHZXpfJ1R0aHs3IA-jzILcSA3ttGr1e3HqAP0Od2_VTxfXi0-07PwQa0VLZ_eR6oewVXwwd",
+          'to':AppBloc.instance.userCurrent!.tokenNotification,
         }),
       );
       response;
@@ -142,21 +142,23 @@ class MessengerBloc extends BaseBloc {
   }
 
   createMessage() async {
-    content.text="";
+    String textContent=content.text;
     if (alikeUid != true) {
       await createRoom();
     }
+    content.text="";
     await fs.collection("Messenger").doc(idRoom).collection("messenger").add({
-      "content": content.text,
+      "content": textContent,
       "email": AppBloc.instance.userCurrent!.email,
       "avatar":AppBloc.instance.userCurrent!.image,
       "timeAt": DateTime.now(),
     });
     fs.collection("Room").doc(idRoom).update({
-      "messengerPresent": content.text,
+      "messengerPresent": textContent,
       "timeCreateMessengerPresent": DateTime.now(),
       "createMessengerAt": AppBloc.instance.userCurrent!.uid,
     });
+
   }
 
   Stream<QuerySnapshot> getMessenger() {

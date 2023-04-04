@@ -21,7 +21,7 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const Menu(),
+      drawer: Menu(),
       appBar: AppBar(
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: Colors.white, // <-- SEE HERE
@@ -101,13 +101,15 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                   (a, b) => b.timeCreateMessengerPresent!
                       .compareTo(a.timeCreateMessengerPresent!),
                 );
-                for (var element in AppBloc.instance.userCurrent!.rooms!) {
+                for(int i=0;i<AppBloc.instance.userCurrent!.rooms!.length;i++){
                   bloc.getUser(
-                      element.member.singleWhere((element) =>
-                          element != AppBloc.instance.userCurrent!.uid),
+                      AppBloc.instance.userCurrent!.rooms![i].member.singleWhere((element) =>
+                      element != AppBloc.instance.userCurrent!.uid),
                       AppBloc.instance.userCurrent!.rooms!.length);
                 }
 
+
+                // return SizedBox();
                 return StreamBuilder(
                   stream: bloc.counterStream,
                   builder: (context, snapshot) {
@@ -119,125 +121,128 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                         child: SizedBox(),
                       );
                     }
-                    List<Users> p = snapshot.data as List<Users>;
-                    return ListView.builder(
-                      shrinkWrap: true,
-                      itemCount: p.length,
-                      itemBuilder: (context, index) {
-                        Timestamp t = AppBloc.instance.userCurrent!
-                            .rooms![index].timeCreateMessengerPresent!;
-                        DateTime d = t.toDate();
-                        return OutlinedButton(
-                            onPressed: () {
-                              AppBloc.instance.uidSearch = p[index].uid;
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => MessengerScreen(),
-                                ),
-                              );
-                            },
-                            style: OutlinedButton.styleFrom(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 15),
-                              side: const BorderSide(
-                                  width: 0, color: Colors.white),
-                            ),
-                            child: Row(
-                              children: [
-                                CachedNetworkImage(
-                                  // cacheManager: _CustomCacheManager.instance,
-                                  imageBuilder: (context, imageProvider) =>
-                                      Container(
-                                    width: 80.0,
-                                    height: 80.0,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      image: DecorationImage(
-                                          image: imageProvider,
-                                          fit: BoxFit.cover),
+                    if(snapshot.hasData){
+                      List<Users> p = snapshot.data as List<Users>;
+                      return ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: p.length,
+                        itemBuilder: (context, index) {
+                          Timestamp t = AppBloc.instance.userCurrent!
+                              .rooms![index].timeCreateMessengerPresent!;
+                          DateTime d = t.toDate();
+                          return OutlinedButton(
+                              onPressed: () {
+                                AppBloc.instance.uidSearch = p[index].uid;
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => MessengerScreen(),
+                                  ),
+                                );
+                              },
+                              style: OutlinedButton.styleFrom(
+                                padding:
+                                const EdgeInsets.symmetric(horizontal: 15),
+                                side: const BorderSide(
+                                    width: 0, color: Colors.white),
+                              ),
+                              child: Row(
+                                children: [
+                                  CachedNetworkImage(
+                                    // cacheManager: _CustomCacheManager.instance,
+                                    imageBuilder: (context, imageProvider) =>
+                                        Container(
+                                          width: 80.0,
+                                          height: 80.0,
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            image: DecorationImage(
+                                                image: imageProvider,
+                                                fit: BoxFit.cover),
+                                          ),
+                                        ),
+                                    placeholder: (context, url) {
+                                      return const SizedBox(
+                                        width: 50,
+                                        height: 50,
+                                        child: ColorFiltered(
+                                          colorFilter: ColorFilter.mode(
+                                            Colors.black,
+                                            BlendMode.srcATop,
+                                          ),
+                                          child: CupertinoActivityIndicator(),
+                                        ),
+                                      );
+                                    },
+                                    errorWidget: (context, url, error) {
+                                      return const Icon(
+                                        Icons.error,
+                                      );
+                                    },
+                                    width: 50,
+                                    height: 50,
+                                    fit: BoxFit.fill,
+                                    imageUrl: p[index].image == ""
+                                        ? LinkUrlImage.urlImageUserDefault
+                                        : LinkUrlImage.urlImage(p[index].image),
+                                  ),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
+                                  SizedBox(
+                                    height: 50,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          p[index].email,
+                                          style: const TextStyle(
+                                              fontSize: 18, color: Colors.grey),
+                                        ),
+                                        const SizedBox(
+                                          height: 3,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Text(
+                                              AppBloc
+                                                  .instance
+                                                  .userCurrent!
+                                                  .rooms![index]
+                                                  .createMessengerAt ==
+                                                  AppBloc.instance
+                                                      .userCurrent!.uid
+                                                  ? "Bạn: "
+                                                  : "",
+                                              style: const TextStyle(
+                                                  color: Colors.grey),
+                                            ),
+                                            Text(
+                                              AppBloc
+                                                  .instance
+                                                  .userCurrent!
+                                                  .rooms![index]
+                                                  .messengerPresent! +
+                                                  "  " +
+                                                  d.hour.toString() +
+                                                  ":" +
+                                                  d.minute.toString(),
+                                              style: const TextStyle(
+                                                  color: Colors.grey),
+                                            ),
+                                          ],
+                                        ),
+                                      ],
                                     ),
                                   ),
-                                  placeholder: (context, url) {
-                                    return const SizedBox(
-                                      width: 50,
-                                      height: 50,
-                                      child: ColorFiltered(
-                                        colorFilter: ColorFilter.mode(
-                                          Colors.black,
-                                          BlendMode.srcATop,
-                                        ),
-                                        child: CupertinoActivityIndicator(),
-                                      ),
-                                    );
-                                  },
-                                  errorWidget: (context, url, error) {
-                                    return const Icon(
-                                      Icons.error,
-                                    );
-                                  },
-                                  width: 50,
-                                  height: 50,
-                                  fit: BoxFit.fill,
-                                  imageUrl: p[index].image == ""
-                                      ? LinkUrlImage.urlImageUserDefault
-                                      : LinkUrlImage.urlImage(p[index].image),
-                                ),
-                                const SizedBox(
-                                  width: 10,
-                                ),
-                                SizedBox(
-                                  height: 50,
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        p[index].email,
-                                        style: const TextStyle(
-                                            fontSize: 18, color: Colors.grey),
-                                      ),
-                                      const SizedBox(
-                                        height: 3,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Text(
-                                            AppBloc
-                                                        .instance
-                                                        .userCurrent!
-                                                        .rooms![index]
-                                                        .createMessengerAt ==
-                                                    AppBloc.instance
-                                                        .userCurrent!.uid
-                                                ? "Bạn: "
-                                                : "",
-                                            style: const TextStyle(
-                                                color: Colors.grey),
-                                          ),
-                                          Text(
-                                            AppBloc
-                                                    .instance
-                                                    .userCurrent!
-                                                    .rooms![index]
-                                                    .messengerPresent! +
-                                                "  " +
-                                                d.hour.toString() +
-                                                ":" +
-                                                d.minute.toString(),
-                                            style: const TextStyle(
-                                                color: Colors.grey),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ));
-                      },
-                    );
+                                ],
+                              ));
+                        },
+                      );
+                    }
+                    return SizedBox();
                   },
                 );
               },
@@ -253,8 +258,9 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
 
   @override
   void init(BuildContext context) {
-    bloc.get();
     super.init(context);
+    bloc.counterStream.asBroadcastStream();
+    bloc.get();
   }
 
   @override

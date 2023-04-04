@@ -59,9 +59,9 @@ class LoginBloc extends BaseBloc {
               "tokenNotification": values,
             });
           });
+          call(() => LoginState.loginSuccess);
         });
-        print("sadasda");
-        call(() => LoginState.loginSuccess);
+
       } on FirebaseAuthException catch (e) {
         if (e.code == 'user-not-found') {
           call(() => LoginState.loginEmailNotFound);

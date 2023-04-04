@@ -13,16 +13,19 @@ class HomeBloc extends BaseBloc {
   late Stream<QuerySnapshot> roomStream;
   StreamController counterController = StreamController<List<Users>>();
   Stream get counterStream => counterController.stream;
+  List<Users> listUser = [];
+
+  int x=0;
   get() async {
-     roomStream = fs
+    roomStream = fs
         .collection("Room")
         .where("members", arrayContains: AppBloc.instance.userCurrent!.uid)
         .snapshots();
   }
-  getUser(String id,int count) async{
 
-    final docs= fs.collection("User").doc(id).snapshots().forEach((element) {
-      if(AppBloc.instance.userRoom.length!=count){
+  getUser(String id, int count) async {
+    var docs = fs.collection("User").doc(id).snapshots().forEach((element) {
+      if (AppBloc.instance.userRoom.length != count) {
         AppBloc.instance.userRoom.add(
           Users(
             uid: element["uid"],
@@ -34,9 +37,5 @@ class HomeBloc extends BaseBloc {
       }
       counterController.sink.add(AppBloc.instance.userRoom);
     });
-
   }
-
-
-
 }
