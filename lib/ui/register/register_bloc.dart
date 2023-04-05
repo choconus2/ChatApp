@@ -5,6 +5,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+enum RegisterState {
+  registerWrongEmailFormat,
+  loading,
+  registerError,
+  registerSuccess
+}
 
 class RegisterBloc extends BaseBloc {
   TextEditingController email = TextEditingController();
@@ -15,23 +21,40 @@ class RegisterBloc extends BaseBloc {
   final auth = FirebaseAuth.instance;
   final fs = FirebaseFirestore.instance;
   signUp(BuildContext context) async {
-    await auth
-        .createUserWithEmailAndPassword(
-            email: email.text.trim(), password: password.text.trim())
-        .whenComplete(() {
-          fs.collection("User").doc(auth.currentUser!.uid).set({
-            "email":auth.currentUser!.email,
-            "uid":auth.currentUser!.uid,
-            "avatar":"",
-            "room":[],
-            "tokenNotification":"",
+    call(() => null);
+    if (email.text.isEmpty) {
+      errorEmail = "không được để trống";
+    } else {
+      errorEmail = null;
+    }
+    if (password.text.isEmpty) {
+      errorPassword = "không được để trống";
+    } else {
+      errorPassword = null;
+    }
+    if (errorEmail == null && errorPassword == null) {
+      call(() => RegisterState.loading);
+      try {
+        await auth
+            .createUserWithEmailAndPassword(
+                email: email.text.trim(), password: password.text.trim())
+            .then((value) {
+          call(() => RegisterState.registerSuccess);
+          fs.collection("User").doc(value.user!.uid).set({
+            "email": value.user!.email,
+            "uid": value.user!.uid,
+            "avatar": "",
+            "room": [],
+            "tokenNotification": "",
           });
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => LoginScreen(),
-        ),
-      );
-    });
+        });
+      } on FirebaseAuthException catch (e) {
+        if (e.code == "invalid-email") {
+          call(() => RegisterState.registerWrongEmailFormat);
+        } else {
+          call(() => RegisterState.registerError);
+        }
+      }
+    }
   }
 }

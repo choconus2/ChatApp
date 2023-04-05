@@ -7,6 +7,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import '../../widget_common/text_field.dart';
+import '../dialog/dialog_error.dart';
+import '../dialog/dialog_loading.dart';
 
 class Register extends BaseStatefulWidget<RegisterBloc> {
    Register({Key? key}) : super(key: key);
@@ -69,7 +71,7 @@ class Register extends BaseStatefulWidget<RegisterBloc> {
             ),
             RichText(
               text: TextSpan(children: [
-                TextSpan(
+                const TextSpan(
                   text: "Do not have an account: ",
                   style: TextStyle(
                     color: Colors.black,
@@ -77,17 +79,12 @@ class Register extends BaseStatefulWidget<RegisterBloc> {
                 ),
                 TextSpan(
                   text: "Sign in",
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.blue,
                   ),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LoginScreen(),
-                        ),
-                      );
+                      Navigator.pop(context);
                     },
                 ),
               ]),
@@ -103,6 +100,28 @@ class Register extends BaseStatefulWidget<RegisterBloc> {
 
   @override
   void onStateChange(BuildContext context, BaseState baseState) {
-    // TODO: implement onStateChange
+    if (baseState.sign == RegisterState.registerSuccess) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => LoginScreen(),
+        ),
+      );
+      return;
+    }
+    if (baseState.sign == RegisterState.loading) {
+      showDialogLoadingCommon(context);
+      return;
+    }
+    if (baseState.sign == RegisterState.registerWrongEmailFormat) {
+      Navigator.pop(context);
+      showDialogErrorCommon(context,errorText: "The email address is badly formatted.");
+      return;
+    }
+    if (baseState.sign == RegisterState.registerError) {
+      Navigator.pop(context);
+      showDialogErrorCommon(context);
+      return;
+    }
   }
 }
