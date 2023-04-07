@@ -27,7 +27,7 @@ class MessengerScreen extends BaseStatefulWidget<MessengerBloc> {
               Brightness.light, //<-- For iOS SEE HERE (dark icons)
         ),
         title: IconButton(
-          onPressed: () async{
+          onPressed: () async {
             print(bloc.token);
             bloc.sendPushMessage();
           },
@@ -82,12 +82,12 @@ class MessengerScreen extends BaseStatefulWidget<MessengerBloc> {
                               if (index < snapshot.data!.docs.length - 1) {
                                 x = snapshot.data!.docs[index]["email"] ==
                                     snapshot.data!.docs[index + 1]["email"];
-
-                              }if (index > 0) {
+                              }
+                              if (index > 0) {
                                 Timestamp t2 =
-                                snapshot.data!.docs[index]["timeAt"];
+                                    snapshot.data!.docs[index]["timeAt"];
                                 Timestamp t3 =
-                                snapshot.data!.docs[index - 1]["timeAt"];
+                                    snapshot.data!.docs[index - 1]["timeAt"];
                                 y = (t2.toDate().day == t3.toDate().day);
                               }
 
@@ -182,8 +182,8 @@ class MessengerScreen extends BaseStatefulWidget<MessengerBloc> {
           isDateTime
               ? const SizedBox()
               : Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                child: Row(
+                  padding: EdgeInsets.symmetric(vertical: 10),
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(dateTime.day.toString() +
@@ -193,7 +193,7 @@ class MessengerScreen extends BaseStatefulWidget<MessengerBloc> {
                           dateTime.year.toString()),
                     ],
                   ),
-              ),
+                ),
           SizedBox(
             width: 250,
             child: Row(
@@ -241,8 +241,7 @@ class MessengerScreen extends BaseStatefulWidget<MessengerBloc> {
                             fit: BoxFit.fill,
                             imageUrl: bloc.image == ""
                                 ? LinkUrlImage.urlImageUserDefault
-                                : LinkUrlImage.urlImage(
-                                bloc.image),
+                                : LinkUrlImage.urlImage(bloc.image),
                           ),
                 const SizedBox(
                   width: 2,

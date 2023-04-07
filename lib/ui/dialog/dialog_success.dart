@@ -13,9 +13,9 @@ showDialogSuccessCommon(BuildContext context, {String? successText}) {
         ),
         content: Center(
             child: Text(
-              successText ?? "successfully",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-            )),
+          successText ?? "successfully",
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+        )),
         actions: <Widget>[
           TextButton(
             style: TextButton.styleFrom(

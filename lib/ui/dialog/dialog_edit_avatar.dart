@@ -90,10 +90,9 @@ Future<void> dialogEditAvatar(BuildContext context) async {
                         await _picker.pickImage(source: ImageSource.gallery);
                     setState(
                       () {
-                        if(image!=null){
+                        if (image != null) {
                           file = File(image!.path);
                         }
-
                       },
                     );
                   },
@@ -113,26 +112,28 @@ Future<void> dialogEditAvatar(BuildContext context) async {
               if (image != null) {
                 final path = "files/${image!.name}";
                 var res = FirebaseStorage.instance.ref().child(path);
-               try{
-                 showDialogLoadingCommon(context);
-                 await res.putFile(file!).then((p0) async {
-                   await FirebaseAuth.instance.currentUser!
-                       .updatePhotoURL(p0.ref.name);
-                   await FirebaseFirestore.instance
-                       .collection("User")
-                       .doc(AppBloc.instance.userCurrent!.uid)
-                       .update({
-                     "avatar": p0.ref.name.toString(),
-                   }).then((value) {
-                     AppBloc.instance.userCurrent!.image = p0.ref.name;
-                   });
-                   Navigator.pop(context);
-                   showDialogSuccessCommon(context,successText: "Change avatar successfully");
-                 });
-               }catch(e){
-                 Navigator.pop(context);
-                 showDialogSuccessCommon(context,successText: "Change avatar error");
-               }
+                try {
+                  showDialogLoadingCommon(context);
+                  await res.putFile(file!).then((p0) async {
+                    await FirebaseAuth.instance.currentUser!
+                        .updatePhotoURL(p0.ref.name);
+                    await FirebaseFirestore.instance
+                        .collection("User")
+                        .doc(AppBloc.instance.userCurrent!.uid)
+                        .update({
+                      "avatar": p0.ref.name.toString(),
+                    }).then((value) {
+                      AppBloc.instance.userCurrent!.image = p0.ref.name;
+                    });
+                    Navigator.pop(context);
+                    showDialogSuccessCommon(context,
+                        successText: "Change avatar successfully");
+                  });
+                } catch (e) {
+                  Navigator.pop(context);
+                  showDialogSuccessCommon(context,
+                      successText: "Change avatar error");
+                }
               }
             },
           ),

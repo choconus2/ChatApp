@@ -38,9 +38,9 @@ class LoginScreen extends BaseStatefulWidget<LoginBloc> {
               errorText: bloc.errorEmail,
               inputBorder: OutlineInputBorder(),
               textOnChange: (textChange) {
-                if(textChange.isNotEmpty){
+                if (textChange.isNotEmpty) {
                   bloc.call(() => null);
-                  bloc.errorEmail=null;
+                  bloc.errorEmail = null;
                 }
               },
             ),
@@ -54,9 +54,9 @@ class LoginScreen extends BaseStatefulWidget<LoginBloc> {
               inputBorder: OutlineInputBorder(),
               obscureText: true,
               textOnChange: (textChange) {
-                if(textChange.isNotEmpty){
+                if (textChange.isNotEmpty) {
                   bloc.call(() => null);
-                  bloc.errorPassword=null;
+                  bloc.errorPassword = null;
                 }
               },
             ),
@@ -125,13 +125,15 @@ class LoginScreen extends BaseStatefulWidget<LoginBloc> {
     }
     if (baseState.sign == LoginState.loginWrongPassword) {
       Navigator.pop(context);
-      showDialogErrorCommon(context,errorText: "Wrong password provided for that user.");
+      showDialogErrorCommon(context,
+          errorText: "Wrong password provided for that user.");
       return;
     }
     if (baseState.sign == LoginState.loginEmailNotFound) {
-    Navigator.pop(context);
-    showDialogErrorCommon(context,errorText: "No user found for that email.");
-    return;
+      Navigator.pop(context);
+      showDialogErrorCommon(context,
+          errorText: "No user found for that email.");
+      return;
     }
     if (baseState.sign == LoginState.loginError) {
       Navigator.pop(context);

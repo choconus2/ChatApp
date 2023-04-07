@@ -61,7 +61,6 @@ class LoginBloc extends BaseBloc {
           });
           call(() => LoginState.loginSuccess);
         });
-
       } on FirebaseAuthException catch (e) {
         if (e.code == 'user-not-found') {
           call(() => LoginState.loginEmailNotFound);

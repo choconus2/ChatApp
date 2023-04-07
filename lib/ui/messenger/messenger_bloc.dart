@@ -21,7 +21,7 @@ class MessengerBloc extends BaseBloc {
   List<Room> listRoom = [];
   late Stream<QuerySnapshot> messageStream;
   final ScrollController controllerScroll = ScrollController();
-  var token;
+  var token=AppBloc.instance.userCurrent!.tokenNotification;
   String image="";
 
   Future<void> sendPushMessage() async {
@@ -48,7 +48,7 @@ class MessengerBloc extends BaseBloc {
             'title': AppBloc.instance.userCurrent?.email,
             'body': content.text,
           },
-          'to':AppBloc.instance.userCurrent!.tokenNotification,
+          'to':token,
         }),
       );
       response;

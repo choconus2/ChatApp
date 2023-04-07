@@ -11,11 +11,12 @@ import '../../model/room.dart';
 class HomeBloc extends BaseBloc {
   final fs = FirebaseFirestore.instance;
   late Stream<QuerySnapshot> roomStream;
-  StreamController counterController = StreamController<List<Users>>();
+  StreamController counterController =
+      StreamController<List<Users>>.broadcast();
   Stream get counterStream => counterController.stream;
   List<Users> listUser = [];
 
-  int x=0;
+  int x = 0;
   get() async {
     roomStream = fs
         .collection("Room")

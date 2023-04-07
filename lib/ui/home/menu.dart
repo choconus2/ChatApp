@@ -62,7 +62,7 @@ class Menu extends BaseStatefulWidget<HomeBloc> {
                   imageUrl: AppBloc.instance.userCurrent!.image == ""
                       ? LinkUrlImage.urlImageUserDefault
                       : LinkUrlImage.urlImage(
-                      AppBloc.instance.userCurrent!.image),
+                          AppBloc.instance.userCurrent!.image),
                 ),
                 const SizedBox(
                   width: 10,
@@ -95,18 +95,21 @@ class Menu extends BaseStatefulWidget<HomeBloc> {
             OutlinedButton(
               onPressed: () {
                 FirebaseAuth.instance.signOut().whenComplete(
-                      () {
-                        FirebaseFirestore.instance.collection("User").doc(AppBloc.instance.userCurrent!.uid).update({
-                          "tokenNotification":"",
-                        });
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => LoginScreen(),
-                          ),
-                        );
-                        },
+                  () {
+                    FirebaseFirestore.instance
+                        .collection("User")
+                        .doc(AppBloc.instance.userCurrent!.uid)
+                        .update({
+                      "tokenNotification": "",
+                    });
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LoginScreen(),
+                      ),
                     );
+                  },
+                );
               },
               child: Row(
                 mainAxisSize: MainAxisSize.min,

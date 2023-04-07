@@ -6,8 +6,6 @@ import 'package:chats_app/ui/home/home_bloc.dart';
 import 'package:chats_app/ui/home/menu.dart';
 import 'package:chats_app/ui/search/search_user.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -94,20 +92,22 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                 }
                 if (AppBloc.instance.userCurrent!.rooms!.isEmpty) {
                   List<Users> s = [];
-                  bloc.counterController.add(s);
+                  bloc.counterController.sink.add(s);
                   return const SizedBox();
                 }
                 AppBloc.instance.userCurrent!.rooms!.sort(
                   (a, b) => b.timeCreateMessengerPresent!
                       .compareTo(a.timeCreateMessengerPresent!),
                 );
-                for(int i=0;i<AppBloc.instance.userCurrent!.rooms!.length;i++){
+                for (int i = 0;
+                    i < AppBloc.instance.userCurrent!.rooms!.length;
+                    i++) {
                   bloc.getUser(
-                      AppBloc.instance.userCurrent!.rooms![i].member.singleWhere((element) =>
-                      element != AppBloc.instance.userCurrent!.uid),
+                      AppBloc.instance.userCurrent!.rooms![i].member
+                          .singleWhere((element) =>
+                              element != AppBloc.instance.userCurrent!.uid),
                       AppBloc.instance.userCurrent!.rooms!.length);
                 }
-
 
                 // return SizedBox();
                 return StreamBuilder(
@@ -121,7 +121,7 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                         child: SizedBox(),
                       );
                     }
-                    if(snapshot.hasData){
+                    if (snapshot.hasData) {
                       List<Users> p = snapshot.data as List<Users>;
                       return ListView.builder(
                         shrinkWrap: true,
@@ -142,7 +142,7 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                               },
                               style: OutlinedButton.styleFrom(
                                 padding:
-                                const EdgeInsets.symmetric(horizontal: 15),
+                                    const EdgeInsets.symmetric(horizontal: 15),
                                 side: const BorderSide(
                                     width: 0, color: Colors.white),
                               ),
@@ -152,15 +152,15 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                                     // cacheManager: _CustomCacheManager.instance,
                                     imageBuilder: (context, imageProvider) =>
                                         Container(
-                                          width: 80.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                                image: imageProvider,
-                                                fit: BoxFit.cover),
-                                          ),
-                                        ),
+                                      width: 80.0,
+                                      height: 80.0,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        image: DecorationImage(
+                                            image: imageProvider,
+                                            fit: BoxFit.cover),
+                                      ),
+                                    ),
                                     placeholder: (context, url) {
                                       return const SizedBox(
                                         width: 50,
@@ -193,8 +193,9 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                                     height: 50,
                                     child: Column(
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.start,
+                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       children: [
                                         Text(
                                           p[index].email,
@@ -208,12 +209,12 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                                           children: [
                                             Text(
                                               AppBloc
-                                                  .instance
-                                                  .userCurrent!
-                                                  .rooms![index]
-                                                  .createMessengerAt ==
-                                                  AppBloc.instance
-                                                      .userCurrent!.uid
+                                                          .instance
+                                                          .userCurrent!
+                                                          .rooms![index]
+                                                          .createMessengerAt ==
+                                                      AppBloc.instance
+                                                          .userCurrent!.uid
                                                   ? "Bạn: "
                                                   : "",
                                               style: const TextStyle(
@@ -221,10 +222,10 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
                                             ),
                                             Text(
                                               AppBloc
-                                                  .instance
-                                                  .userCurrent!
-                                                  .rooms![index]
-                                                  .messengerPresent! +
+                                                      .instance
+                                                      .userCurrent!
+                                                      .rooms![index]
+                                                      .messengerPresent! +
                                                   "  " +
                                                   d.hour.toString() +
                                                   ":" +
@@ -259,7 +260,6 @@ class HomeScreen extends BaseStatefulWidget<HomeBloc> {
   @override
   void init(BuildContext context) {
     super.init(context);
-    bloc.counterStream.asBroadcastStream();
     bloc.get();
   }
 
