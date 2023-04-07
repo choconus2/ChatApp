@@ -18,9 +18,6 @@ showDialogErrorCommon(BuildContext context, {String? errorText}) {
         )),
         actions: <Widget>[
           TextButton(
-            style: TextButton.styleFrom(
-              textStyle: Theme.of(context).textTheme.labelLarge,
-            ),
             child: const Text('Ok'),
             onPressed: () {
               Navigator.pop(context);

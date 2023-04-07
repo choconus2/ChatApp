@@ -111,12 +111,8 @@ class LoginScreen extends BaseStatefulWidget<LoginBloc> {
   @override
   void onStateChange(BuildContext context, BaseState baseState) {
     if (baseState.sign == LoginState.loginSuccess) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (BuildContext context) => HomeScreen(),
-        ),
-      );
+      Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) =>
+          HomeScreen()), (Route<dynamic> route) => false);
       return;
     }
     if (baseState.sign == LoginState.loading) {

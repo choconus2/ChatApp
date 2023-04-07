@@ -8,7 +8,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../base_bloc/app_bloc.dart';
-import '../helper/secure_storage_helper.dart';
 import '../model/user.dart';
 
 class SplashScreen extends StatefulWidget {

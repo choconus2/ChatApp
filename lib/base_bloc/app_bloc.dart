@@ -1,7 +1,6 @@
 import 'package:chats_app/base_bloc/base_bloc.dart';
 import 'package:chats_app/model/user.dart';
 
-import '../helper/secure_storage_helper.dart';
 class AppBloc extends BaseBloc{
   static AppBloc? _instance;
 
